@@ -1,14 +1,14 @@
 # react-short-hook
 
-google authentication hooks
+google authentication hooks for reset password only. **testing purpose**.
 
 #Installation
 
 ```bash
-npm i --save react-short-hook
-```
+# with npm
+npm i react-short-hook
 
-```bash
+# with yarn
 yarn add react-short-hook
 ```
 
@@ -24,11 +24,12 @@ yarn add react-short-hook
 
 - `sendPassResetEmail(email: string)` function to send the email.
 - `loading` returns boolean that indicates processing state while sending the email.
-- `error` returns error if any error occurs.
-- `sent` returs boolean if the email has sent successfully without any error.
+- `error` returns error if any error occurs. usecase: `error.message` or `error.toast`
+- `sent` returns boolean if the email has sent successfully without any error.
 
 ```js
-import { usePassResetEmail } from 'firebase-short-hooks/auth';
+// import package
+import { usePassResetEmail } from 'react-short-hook';
 ```
 
 ```js
